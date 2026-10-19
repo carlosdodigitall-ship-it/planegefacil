@@ -15,10 +15,166 @@
 @media(max-width:900px){.hero-grid{gap:30px}.hero{padding:62px 0}.hero h1{letter-spacing:-2px}.nav-links{gap:17px}.features{gap:13px}.feature{padding:22px}.split{gap:38px}.float-card{right:-10px}.footer-grid{grid-template-columns:1.4fr 1fr 1fr}.footer-grid>div:last-child{grid-column:2/4}}
 @media(max-width:700px){.container{width:min(100% - 32px,540px)}.topbar{font-size:10px}.nav-inner{height:66px}.brand{font-size:18px}.brand-mark{width:34px;height:34px}.menu-toggle{display:grid;place-items:center}.nav-actions{gap:10px}.nav-actions>a:first-child{display:none}.nav-actions .btn{padding:9px 12px;font-size:12px}.nav-links{display:none;position:absolute;left:0;right:0;top:65px;padding:18px 22px 22px;background:white;border-bottom:1px solid var(--line);box-shadow:0 15px 25px #0f172a0a;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 0;border-bottom:1px solid #f1f5f9}.hero{padding:49px 0 44px}.hero-grid{grid-template-columns:1fr;gap:35px}.hero h1{font-size:clamp(39px,11vw,53px);letter-spacing:-2px;margin:18px 0 15px}.hero-copy{font-size:15px}.hero-actions{margin:23px 0 18px}.hero-actions .btn{flex:1;padding:14px 12px;font-size:12px}.micro-trust{gap:9px;font-size:10px}.dashboard-wrap{padding:0 2px 12px}.dashboard{transform:none;border-radius:16px}.dash-content{padding:14px}.dash-top{height:46px}.metric-grid{gap:7px}.metric{padding:10px 8px}.metric-value{font-size:clamp(12px,3.6vw,17px)}.chart{height:100px}.float-card{right:-2px;bottom:0;padding:10px 12px}.float-icon{width:31px;height:31px}.trust-strip{padding:20px 0}.trust-inner{justify-content:center;gap:15px 23px}.trust-label{width:100%;text-align:center}.trust-item{font-size:11px}.section{padding:66px 0}.section-head{margin-bottom:30px}.section h2,.split-copy h2{letter-spacing:-1px}.section-head p{font-size:14px}.features{grid-template-columns:1fr}.feature{padding:23px}.feature-icon{margin-bottom:14px}.split{grid-template-columns:1fr;gap:30px}.split-visual{padding:17px}.budget-card{padding:20px}.budget-total{font-size:29px}.split-copy>p{font-size:14px}.steps{grid-template-columns:1fr;gap:15px}.step{padding:10px}.pricing-card{padding:25px 22px}.price{font-size:38px}.cta{padding-bottom:60px}.cta-panel{padding:32px 24px;align-items:flex-start;flex-direction:column;border-radius:20px}.cta-panel h2{font-size:29px}.cta-panel .btn{width:100%}.footer-grid{grid-template-columns:1fr 1fr;gap:28px 20px}.footer-grid>div:first-child{grid-column:1/-1}.footer-grid>div:last-child{grid-column:auto}.footer{padding-top:40px}.footer-bottom{font-size:10px}.mobile-cta{display:block;position:fixed;bottom:0;left:0;right:0;z-index:9;background:#ffffffed;backdrop-filter:blur(12px);border-top:1px solid #e2e8f0;padding:10px 16px calc(10px + env(safe-area-inset-bottom))}.mobile-cta .btn{width:100%;padding:12px}.footer{padding-bottom:85px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+/* Planeje Fácil — refinamento visual premium */
+:root{
+ --blue:#1d4ed8;--blue2:#1e40af;--navy:#0b1738;--ink:#17243e;
+ --muted:#64748b;--line:#e2e8f0;--pale:#f4f7fc;--green:#13845a;
+ --shadow:0 24px 60px rgba(15,35,85,.10);
+ --space-section:clamp(64px,8vw,104px);
+}
+html{scroll-padding-top:88px}
+body{font-size:16px;-webkit-font-smoothing:antialiased}
+.container{width:min(1200px,calc(100% - 48px))}
+.topbar{padding:8px 16px;background:#0b1738;font-size:11px;letter-spacing:.035em}
+.nav{background:rgba(255,255,255,.96);backdrop-filter:blur(16px)}
+.nav-inner{height:80px}
+.brand{gap:11px;font-size:20px;letter-spacing:-.7px}
+.brand-mark{border-radius:10px;background:#1745b5;box-shadow:none}
+.nav-links{gap:28px;font-size:13px}
+.nav-actions{gap:22px}
+.btn{border-radius:9px;box-shadow:none;transition:background .18s,border-color .18s,transform .18s}
+.btn:hover{box-shadow:none;transform:translateY(-1px)}
+.btn-light{border-color:#cbd5e1}
+.hero{padding:clamp(62px,7vw,98px) 0 clamp(58px,7vw,88px);background:linear-gradient(115deg,#f8faff 0%,#fff 56%,#f1f6ff 100%)}
+.hero:before{width:520px;height:520px;border-color:#c7d7f2;right:-250px;top:-220px}
+.hero-grid{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(34px,5vw,72px)}
+.eyebrow{border-radius:6px;background:#edf3ff;border-color:#d5e2ff;padding:7px 10px;letter-spacing:.055em}
+.eyebrow i{box-shadow:none;background:#1d4ed8}
+.hero h1{font-size:clamp(42px,5.1vw,68px);line-height:1.04;letter-spacing:-.045em;margin:23px 0 20px;max-width:600px}
+.hero h1 strong{color:#1d4ed8}
+.hero-copy{font-size:16px;line-height:1.85;max-width:470px;color:#53627a}
+.hero-actions{gap:12px;margin:30px 0 25px}
+.hero-actions .btn{padding:14px 18px}
+.micro-trust{gap:18px;font-size:12px}
+.dashboard-wrap{padding:4px 0 8px 4px}
+.dashboard{border-radius:14px;box-shadow:0 28px 65px rgba(15,35,85,.13);transform:perspective(1200px) rotateY(-2deg) rotateX(1deg)}
+.dash-top{height:50px;padding:0 20px}
+.dash-content{padding:20px}
+.metric{border-radius:8px;background:#fff}
+.chart-card,.transactions{border-radius:9px}
+.float-card{border-radius:9px;box-shadow:0 12px 28px rgba(15,23,42,.10)}
+.float-icon{border-radius:8px}
+.trust-strip{padding:21px 0;border-color:#e8edf5}
+.trust-item{font-size:12px;color:#53627a;font-weight:700}
+.trust-item b{color:#1d4ed8}
+.section{padding:var(--space-section) 0}
+.section-soft{background:#f5f8fd}
+.section-head{max-width:720px;margin:0 auto 42px}
+.kicker{letter-spacing:.12em;color:#1d4ed8}
+.section h2,.split-copy h2{font-size:clamp(30px,3.4vw,44px);line-height:1.14;letter-spacing:-.04em}
+.section-head p{font-size:15px;line-height:1.8}
+.features{gap:0 28px}
+.feature{padding:26px 0 28px;border:0;border-top:1px solid #dce5f1;border-radius:0;background:transparent;box-shadow:none;transition:border-color .18s}
+.feature:hover{transform:none;border-color:#7da5f5;box-shadow:none}
+.feature-icon{width:36px;height:36px;background:transparent;border-radius:0;margin-bottom:16px;color:#1d4ed8}
+.feature-icon svg{width:22px;height:22px}
+.feature h3{font-size:17px;letter-spacing:-.02em}
+.feature p{font-size:14px;line-height:1.8;max-width:340px}
+.split{gap:clamp(38px,6vw,84px)}
+.split-visual{padding:24px;border-radius:14px;background:#eaf1fc}
+.budget-card{border:1px solid #e8edf5;border-radius:10px;box-shadow:0 12px 30px rgba(15,35,85,.07)}
+.budget-title{font-size:13px}
+.budget-total{font-size:clamp(29px,3vw,36px)}
+.progress{border-radius:3px}
+.progress i{border-radius:3px}
+.split-copy>p{font-size:15px;line-height:1.85}
+.benefit-list{gap:13px}
+.benefit-list li{font-size:14px;line-height:1.65}
+.benefit-list .checkmark{background:#e2f4eb;color:#14754e;border-radius:4px}
+.steps{gap:28px}
+.step{text-align:left;padding:18px 20px 18px 0;border-top:1px solid #dce5f1}
+.step-number{width:auto;height:auto;margin:0 0 22px;background:transparent;color:#1d4ed8;border-radius:0;font-size:13px;letter-spacing:.12em}
+.step h3{font-size:18px;letter-spacing:-.025em}
+.step p{margin:0;max-width:310px;line-height:1.8}
+.pricing-card{border:1px solid #dbe4f0;border-radius:14px;box-shadow:0 18px 48px rgba(15,35,85,.08);padding:36px}
+.pricing-top .eyebrow{border-radius:5px}
+.price{font-size:40px;letter-spacing:-.045em}
+.pricing-card .btn{border-radius:9px}
+.pricing-list{gap:13px}
+.faq{gap:0;border-top:1px solid #dce5f1}
+.faq details{border:0;border-bottom:1px solid #dce5f1;border-radius:0;padding:0 4px;background:transparent}
+.faq summary{padding:20px 0;font-size:15px}
+.faq details p{max-width:680px;line-height:1.85}
+.cta{padding-bottom:clamp(64px,8vw,96px)}
+.cta-panel{border-radius:12px;padding:clamp(30px,5vw,54px);background:#10295f}
+.cta-panel:after{right:7%;border-color:#ffffff1c}
+.cta-panel h2{font-size:clamp(28px,3.4vw,42px);letter-spacing:-.04em}
+.cta-panel p{line-height:1.8}
+.cta-panel .btn{border-radius:9px}
+.footer{padding:52px 0 24px;background:#0b1738}
+.footer .brand-mark{background:#1745b5}
+.footer-links a{transition:color .18s}
+.footer-bottom{line-height:1.7}
+.disclaimer{line-height:1.8}
+@media(max-width:900px){
+ .container{width:min(100% - 40px,760px)}
+ .hero-grid{grid-template-columns:1fr 1fr;gap:28px}
+ .hero h1{font-size:clamp(38px,5.2vw,52px)}
+ .nav-links{gap:15px}
+ .features{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 24px}
+ .feature{padding:23px 0}
+ .split{gap:34px}
+}
+@media(max-width:700px){
+ .container{width:calc(100% - 40px)}
+ .topbar{font-size:10px}
+ .nav-inner{height:68px}
+ .nav-actions{gap:10px}
+ .nav-actions .btn{border-radius:8px}
+ .nav-links{top:67px;padding:12px 20px 18px}
+ .hero{padding:48px 0 46px}
+ .hero-grid{grid-template-columns:1fr;gap:34px}
+ .hero h1{font-size:clamp(39px,10.5vw,50px);letter-spacing:-.045em;max-width:520px}
+ .hero-copy{font-size:15px;line-height:1.8}
+ .hero-actions .btn{flex:initial}
+ .dashboard{transform:none}
+ .dash-content{padding:13px}
+ .metric-grid{gap:7px}
+ .metric{padding:10px 8px}
+ .chart-card{padding:12px}
+ .transactions{padding:11px}
+ .float-card{right:0;bottom:0}
+ .trust-inner{justify-content:flex-start;gap:13px 20px}
+ .trust-label{text-align:left}
+ .section{padding:64px 0}
+ .section-head{text-align:left;margin:0 0 30px}
+ .section-head p{margin-left:0}
+ .features{grid-template-columns:1fr;gap:0}
+ .feature{padding:22px 0}
+ .feature-icon{margin-bottom:10px}
+ .split{grid-template-columns:1fr;gap:28px}
+ .split-visual{padding:15px}
+ .budget-card{padding:20px}
+ .steps{grid-template-columns:1fr;gap:10px}
+ .step{padding:16px 0}
+ .step-number{margin-bottom:12px}
+ .pricing-card{padding:25px 21px}
+ .pricing-top{align-items:flex-start}
+ .price{font-size:35px}
+ .faq summary{font-size:14px}
+ .cta-panel{padding:30px 23px;gap:22px}
+ .cta-panel h2{font-size:29px}
+ .footer-grid{gap:26px 18px}
+ .mobile-cta{box-shadow:0 -6px 22px rgba(15,35,85,.05)}
+}
+@media(max-width:380px){
+ .container{width:calc(100% - 32px)}
+ .hero-actions{flex-direction:column}
+ .hero-actions .btn{width:100%}
+ .metric-value{font-size:11px}
+ .metric-label{font-size:8px}
+ .float-card{transform:scale(.92);transform-origin:right bottom}
+ .pricing-top{flex-direction:column}
+}
+@media(prefers-reduced-motion:reduce){
+ .dashboard{transform:none}
+}
+
 </style>
 </head>
 <body>
-<div class="topbar">Mais clareza para suas escolhas. <span>Mais tranquilidade para o seu futuro.</span></div>
+<div class="topbar">Gestão financeira com mais clareza. <span>Planejamento para decisões melhores.</span></div>
 <header class="nav">
  <div class="container nav-inner">
   <a class="brand" href="#" aria-label="Planeje Fácil - início"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 17.5 10 12l3.3 3.3L20 7.5M14.5 7.5H20v5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>planeje<em>fácil</em></span></a>
@@ -30,7 +186,7 @@
 <section class="hero">
  <div class="container hero-grid">
   <div>
-   <div class="eyebrow"><i></i> Sua organização financeira começa aqui</div>
+   <div class="eyebrow"><i></i> Gestão financeira pessoal</div>
    <h1>Seu dinheiro merece um <strong>plano melhor.</strong></h1>
    <p class="hero-copy">Organize suas finanças em um só lugar, acompanhe o que entra e sai e transforme números em decisões mais conscientes.</p>
    <div class="hero-actions"><a class="btn" href="#comecar">Quero organizar minhas finanças <span aria-hidden="true">→</span></a><a class="btn btn-light" href="#recursos">Conhecer recursos</a></div>
@@ -54,8 +210,8 @@
   </div>
  </div>
 </section>
-<div class="trust-strip"><div class="container trust-inner"><div class="trust-label">Uma rotina financeira mais leve</div><div class="trust-item"><b>↗</b> Receitas e despesas</div><div class="trust-item"><b>◷</b> Contas organizadas</div><div class="trust-item"><b>▥</b> Relatórios visuais</div><div class="trust-item"><b>◎</b> Metas e planejamento</div></div></div>
-<section class="section" id="recursos"><div class="container"><div class="section-head"><span class="kicker">Tudo mais organizado</span><h2>Menos confusão. Mais controle.</h2><p>Ferramentas para você entender sua vida financeira e planejar os próximos passos com mais segurança.</p></div><div class="features">
+<div class="trust-strip"><div class="container trust-inner"><div class="trust-label">Tudo o que importa para suas finanças</div><div class="trust-item"><b>↗</b> Receitas e despesas</div><div class="trust-item"><b>◷</b> Contas organizadas</div><div class="trust-item"><b>▥</b> Relatórios visuais</div><div class="trust-item"><b>◎</b> Metas e planejamento</div></div></div>
+<section class="section" id="recursos"><div class="container"><div class="section-head"><span class="kicker">Tudo mais organizado</span><h2>Menos confusão. Mais controle.</h2><p>Uma experiência organizada para acompanhar seu dinheiro, visualizar prioridades e planejar os próximos passos.</p></div><div class="features">
  <article class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V5m0 14h17M7 15l4-4 3 2 6-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Visão financeira completa</h3><p>Tenha uma visão organizada de receitas, despesas e saldo para entender melhor para onde seu dinheiro está indo.</p></article>
  <article class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3.5" y="5" width="17" height="16" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M7.5 3v4M16.5 3v4M3.5 10h17M8 14h3m-3 3h6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></div><h3>Contas e vencimentos</h3><p>Centralize seus compromissos financeiros e acompanhe as datas importantes para manter sua rotina em ordem.</p></article>
  <article class="feature"><div class="feature-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div><h3>Relatórios que esclarecem</h3><p>Visualize seus hábitos de consumo com informações fáceis de entender e identifique oportunidades de melhoria.</p></article>
@@ -70,7 +226,7 @@
 <section class="cta" id="comecar"><div class="container"><div class="cta-panel"><div><h2>O próximo capítulo das suas finanças começa com planejamento.</h2><p>Organize o presente para tomar decisões melhores sobre o futuro.</p></div><a class="btn" href="#acesso">Conhecer o Planeje Fácil <span aria-hidden="true">→</span></a></div></div></section>
 <section id="acesso" style="padding:0 0 40px"><div class="container" style="text-align:center"><p style="font-size:12px;color:#64748b;margin:0">Área de acesso: conecte este botão à rota real de login/cadastro da aplicação quando ela estiver disponível.</p></div></section>
 </main>
-<footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="#"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 17.5 10 12l3.3 3.3L20 7.5M14.5 7.5H20v5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>planeje<em>fácil</em></span></a><p class="footer-about">Mais clareza para organizar seu dinheiro, acompanhar seus objetivos e planejar o futuro com consciência.</p></div><div><h4>Plataforma</h4><div class="footer-links"><a href="#recursos">Recursos</a><a href="#como-funciona">Como funciona</a><a href="#planos">Planos</a></div></div><div><h4>Ajuda</h4><div class="footer-links"><a href="#duvidas">Perguntas frequentes</a><a href="#acesso">Área de acesso</a></div></div><div><h4>Informações</h4><div class="footer-links"><a href="#duvidas">Privacidade e segurança</a><a href="#duvidas">Termos de uso</a></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> Planeje Fácil. Todos os direitos reservados.</span><span>Organização financeira com mais clareza.</span></div><p class="disclaimer">Os valores, gráficos e movimentações exibidos na ilustração são demonstrativos, não representam dados reais. A plataforma não promete resultados financeiros. Recursos, preços, políticas e integrações devem ser confirmados antes da publicação comercial.</p></div></footer>
+<footer class="footer"><div class="container"><div class="footer-grid"><div><a class="brand" href="#"><span class="brand-mark"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 17.5 10 12l3.3 3.3L20 7.5M14.5 7.5H20v5.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>planeje<em>fácil</em></span></a><p class="footer-about">Mais clareza para organizar seu dinheiro, acompanhar seus objetivos e planejar o futuro com consciência.</p></div><div><h4>Plataforma</h4><div class="footer-links"><a href="#recursos">Recursos</a><a href="#como-funciona">Como funciona</a><a href="#planos">Planos</a></div></div><div><h4>Ajuda</h4><div class="footer-links"><a href="#duvidas">Perguntas frequentes</a><a href="#acesso">Área de acesso</a></div></div><div><h4>Informações</h4><div class="footer-links"><a href="#duvidas">Privacidade e segurança</a><a href="#duvidas">Termos de uso</a></div></div></div><div class="footer-bottom"><span>© <span id="year"></span> Planeje Fácil. Todos os direitos reservados.</span><span>Planejamento financeiro, com clareza e controle.</span></div><p class="disclaimer">Os valores, gráficos e movimentações exibidos na ilustração são demonstrativos, não representam dados reais. A plataforma não promete resultados financeiros. Recursos, preços, políticas e integrações devem ser confirmados antes da publicação comercial.</p></div></footer>
 <div class="mobile-cta"><a class="btn" href="#comecar">Conhecer o Planeje Fácil <span aria-hidden="true">→</span></a></div>
 <script>
 const toggle=document.getElementById('menuToggle');const links=document.getElementById('navLinks');toggle.addEventListener('click',()=>{const open=links.classList.toggle('open');toggle.setAttribute('aria-expanded',String(open));toggle.setAttribute('aria-label',open?'Fechar menu':'Abrir menu')});links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');toggle.setAttribute('aria-expanded','false');toggle.setAttribute('aria-label','Abrir menu')}));document.getElementById('year').textContent=new Date().getFullYear();
